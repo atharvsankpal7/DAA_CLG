@@ -1,6 +1,8 @@
+import java.util.Scanner;
 class Solution {
-    public int longestCommonSubsequence(String text1, String text2) {
-         int m = text1.length()+ 1;
+  public static Scanner io = new Scanner(System.in);
+  public static int longestCommonSubsequence(String text1, String text2) {
+    int m = text1.length() + 1;
     int n = text2.length() + 1;
 
     int[][] solution = new int[m][n];
@@ -15,8 +17,14 @@ class Solution {
         }
       }
     }
-    return solution[m-1][n-1];
-    }
-}
+    return solution[m - 1][n - 1];
+  }
 
-  
+  public static void main(String[] a){
+    System.out.println("Enter the First string --> ");
+    String s1 = io.next();
+    System.out.println("Enter the second string --> ");
+    String s2 = io.next();
+    System.out.println("The length of Longest common Subsequence is --> " + longestCommonSubsequence(s1,s2));
+  }
+}
