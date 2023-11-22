@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class Graham_Scan {
+public class _03_Grahams_Scan {
     public static void main(String[] args) {
         ArrayList<Point> points = new ArrayList<Point>();
         Scanner io = new Scanner(System.in);
